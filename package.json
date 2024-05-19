@@ -1,0 +1,12 @@
+{
+  "name": "vampire",
+  "version": "1.0.0",
+  "description": "",
+  "main": "todos.js",
+  "scripts": {
+       "serve:vampire": "npx http-server . -o"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
