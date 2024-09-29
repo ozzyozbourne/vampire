@@ -21,7 +21,7 @@ addTodoInput.addEventListener('keydown', ({ key }) => {
     }
 })
 
-addTodoInput.addEventListener('click', () => {
+addTodoButton.addEventListener('click', () => {
     addTodo()
 })
 
@@ -33,13 +33,11 @@ function renderTodoInReadMode(todo) {
     span.textContent = todo
     span.addEventListener('dblclick', () => {
         const idx = todos.indexOf(todo)
-
         todosList.replaceChild(
             renderTodoInEditMode(todo),
             todosList.childNodes[idx]
         )
     })
-
     li.append(span)
 
     const button = document.createElement('button')
