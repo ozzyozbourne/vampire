@@ -13,14 +13,24 @@
     "dist/vampire.js"
   ],
   "scripts": {
-      "prepack": "npm build run",
-      "build": "rollup -c"
+    "build": "rollup -c",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "prepack": "npm run build"
   },
   "license": "MIT",
   "author": "Osaid Khan",
   "devDependencies": {
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.11.1",
+    "eslint": "^9.11.1",
+    "globals": "^15.9.0",
+    "jsdom": "^25.0.1",
     "rollup": "^4.22.5",
     "rollup-plugin-cleanup": "^3.2.1",
-    "rollup-plugin-filesize": "^10.0.0"
+    "rollup-plugin-filesize": "^10.0.0",
+    "vitest": "^2.1.1"
   }
 }
