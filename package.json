@@ -1,12 +1,29 @@
 {
-  "name": "vampire",
-  "version": "1.0.0",
-  "description": "",
-  "main": "todos.js",
+  "name": "vampire-ui",
+  "version": "0.0.2",
+  "private": true,
+  "description": "ui with webgpu",
+  "workspaces": [
+    "packages/compiler",
+    "packages/loader",
+    "packages/runtime"
+  ],
   "scripts": {
-       "serve:vampire": "npx http-server . -o"
+    "serve:examples": "npx http-server . -o ./examples/ -bg"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ozzyozbourne/vampire.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "frontend",
+    "framework"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ozzyozbourne/vampire/issues"
+  },
+  "homepage": "https://github.com/ozzyozbourne/vampire#readme"
 }
